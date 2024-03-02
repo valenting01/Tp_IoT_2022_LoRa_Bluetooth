@@ -1,6 +1,7 @@
 # Tp_IoT_2022_LoRa_Bluetooth
 
 Réalisé par Valentin GAUTREAU, Joshua LUCAS, Amand MESSE, Erwan SENECHAL
+Groupe TP SRT 2024
 
 ## 1. Receiver :
 
