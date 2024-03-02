@@ -29,4 +29,4 @@ Dans la boucle loop(), toutes les 5 secondes, une fonction est définie pour pub
 
 ## 3. Schéma de l'échange
 Voici un diagramme simplifié des échanges, en pointillé ce qui n'a pas été réalisé.
-![Diagramme](https://github.com/valenting01/Tp_IoT_2022_LoRa_Bluetooth/assets/42234363/07c64b34-73af-44da-8a5b-c34143d88e83)
+![Diagramme_TP](https://github.com/valenting01/Tp_IoT_2022_LoRa_Bluetooth/assets/42234363/a1199b3a-7d16-4a7e-8cbc-2ba44fb74410)
