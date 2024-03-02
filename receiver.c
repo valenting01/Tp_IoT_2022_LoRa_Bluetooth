@@ -44,7 +44,7 @@ void setup() {
  Serial.begin(9600);
  u8x8.begin(); u8x8.setFont(u8x8_font_chroma48medium8_r);
   
- // connecting to a WiFi network
+ // Connecting to a WiFi network
  WiFi.begin(ssid, password);
  while (WiFi.status() != WL_CONNECTED) {
      delay(500);
@@ -59,6 +59,7 @@ void setup() {
  client.setServer(mqtt_broker, mqtt_port);
  client.setCallback(callback);
 
+ // Verify connectivity to MQTT broker
  while (!client.connected()) {
      String client_id = "esp32-client-";
      client_id += String(WiFi.macAddress());
@@ -106,6 +107,7 @@ void callback(char *topic, byte *payload, unsigned int length) {
  Serial.println("-----------------------"); */
 }
 
+// Configuration du LoRa
 void configLoRa() {
     // LoRA
   pinMode(DI0, INPUT); // signal interrupt
@@ -142,6 +144,7 @@ void onReceive(int packetSize) {
 void loop() {
 
   client.loop();
+  // Envoi d'un paquet LoRa
   if (loraConfigured) {
       Serial.println("New Packet") ;
 
